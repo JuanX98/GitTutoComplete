@@ -1,0 +1,17 @@
+- MySql
+Trigger
+Rollback
+Transacciones
+- Procesameinto de datos
+Python
+Java
+GIT
+Docker
+AWS
+Spark
+postgreSQL
+JS, JQuery/Ajax
+Python
+Java
+PHP/Laravel
+React/Angular

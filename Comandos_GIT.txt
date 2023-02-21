@@ -1,0 +1,65 @@
+git config --global user.name "My name" //git config --global indica que el comando se eejcuta una sola vez de manera global y no por proyecto
+git config --global user.email email@domain.xxx
+git config --global core.editor "code --wait"
+git config --global -e //Abre el archivo de configuracion global
+git config --global core.autocrlf true
+git config -h
+git init //Inicializa una carpeta como repositorio
+git status //Muestra el estado del repositorio
+git add archivo.txt //Añade archivos listos para commit
+git add *.xxx //Añade todos los archivos con la misma extension 
+git add . //Añade todos los acrchivos
+
+git commit -m "mensaje"
+git commit //Te abre VSCode para poder agregar el mensaje desde alli
+
+
+******    ELIMINANDO ARCHIVOS    ********
+rm archivo2.txt
+git status
+git add archivo2.txt
+git status
+git commit -m "Elimine archivo 2"
+
+
+******    ELIMINANDO ARCHIVOS SEGUNDO METODO   ********
+git rm archivo.txt
+git status
+git commit -m "Elimine archivo 2"
+
+
+*******  REGRESAR UN ARCHIVO DE LA ESTAPA DE STAGE  *********
+git restore --staged archivo.txt
+git restore archivo.txt
+
+
+****** RENOMBRAR ARCHIVO *******
+mv archivo.txt archivo1.txt
+git status
+git add archivo.txt archivo1.txt
+git status
+git commit -m "Renombrar archivo"
+
+// O TAMBIEN USAR
+
+git mv archivo1.txt archivo.txt
+
+***** GIT ******
+git status -s //Muestra el estado de los archivos sin informacion extra
+git diff //Muestra los cambios realizados en un archivo
+git log //Muestra el historial de cambios del repo
+git log --oneline //Muestra el historial sin tanta informacion
+git checkout -b name_branch //Creo una nueva rama
+git checkout master //Cambio a la rama master
+cat archivo.xxx //Muestra el contenido del archivo en terminal
+git merge ramab //Combina rama b con la rama master o en donde estes ubicado
+
+git remote add origin https://url //Añade un servidor remoto para tu repo
+git push //Subir cambios
+
+
+
+
+LA CREACION DEL ARCHIVO .gitignore NOS AYUDA A IGNORAR TODOS LOS ARCHIVOS QUE NO QUERAMOS AGREGAR AL REPOSITORIO REMOTO
+pwd //Muestra la direccion en donde nos encontramos
+ls -a //Muestra directorios ocultos
